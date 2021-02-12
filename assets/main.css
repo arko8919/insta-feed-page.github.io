@@ -1,0 +1,100 @@
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+
+
+
+    margin: 5rem .5rem;
+
+    position: relative;
+
+    background-color: white;
+}
+
+/* section decoration - lines on back of section and image  */
+section::before {
+    content: "";
+    width: 77%;
+    height: 100%;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid grey;
+    z-index: -5;
+}
+
+section p {
+    max-width: 55%;
+}
+
+/* button */
+button {
+    font-size: .8rem;
+    padding: .6rem .9rem;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+/* image container with image decoration */
+.image-wrapper {
+    width: 60%;
+    position: relative;
+    bottom: -15%;
+    margin-top: -10%;
+}
+
+/* image decoration */
+.image-decoration {
+    height: 1rem;
+    position: relative;
+
+}
+.image-decoration::before, .image-decoration::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+}
+
+.image-decoration::before {
+    width: .2rem;
+    height: .2rem;
+    border: 1px solid grey;
+    background-color: grey;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.image-decoration::after {
+    border-right: 1px solid grey;
+    width: 1px;
+    height: 100%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+/* image */
+img {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 468px) {
+    section {
+        max-width: 80%;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    section {
+        max-width: 40%;
+    }
+}
