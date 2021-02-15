@@ -1,0 +1,52 @@
+/* social media */
+.social-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0; /* remove padding-inline-start */
+    margin: 0;
+    list-style: none;
+}
+
+.social-media li {
+    text-indent: -9999px; /* sends the text off-screen. keep text for accessibility purpose */
+    white-space: nowrap; /* because only the first line is indented */
+    border: none;
+    padding: .4rem;
+    margin: 1rem;
+    transition: .2s all ease-out;
+}
+
+.social-media a {
+    /* display block and height 100% makes anchor clickable  */
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    outline: none; /* removes outlines which show when i click on link */
+    background: center / contain no-repeat;
+
+}
+
+.social-media li:hover {
+    box-shadow: 0 .125rem 2px #5D2E46,
+    0 -.125rem .125rem #5D2E46,
+    .125rem 0 .125rem #5D2E46,
+    -.125rem 0 .125rem #5D2E46;
+    border-radius: .3125rem;
+}
+
+.social-media li:nth-child(1) a {
+    background-image: url(images/linkedin.png);
+}
+
+.social-media li:nth-child(2) a {
+    background-image: url(images/github.png);
+}
+
+.social-media li:nth-child(3) a {
+    background-image: url(images/facebook.png);
+}
+
+.social-media li:nth-child(4) a {
+    background-image: url(images/instagram.png);
+}

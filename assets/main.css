@@ -1,7 +1,8 @@
-main {
+.container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 section {
@@ -10,13 +11,9 @@ section {
     align-items: center;
     text-align: center;
 
-
-
-    margin: 5rem .5rem;
-
+    margin: 5rem .7rem;
     position: relative;
-
-    background-color: white;
+    background-color: #D0ADA7;
 }
 
 /* section decoration - lines on back of section and image  */
@@ -28,7 +25,7 @@ section::before {
     bottom: -5%;
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid grey;
+    border: .0625rem solid #AD6A6C;
     z-index: -5;
 }
 
@@ -40,8 +37,17 @@ section p {
 button {
     font-size: .8rem;
     padding: .6rem .9rem;
-    background-color: white;
-    border: 1px solid grey;
+    border: .0625rem solid #B58DB6;
+    background-color: #5D2E46;
+    color: #B58DB6;
+    cursor: pointer;
+    transition: .4s all;
+    outline: none;
+}
+
+button:hover {
+    background-color: #B58DB6;
+    color: #5D2E46;
 }
 
 /* image container with image decoration */
@@ -58,30 +64,34 @@ button {
     position: relative;
 
 }
+
 .image-decoration::before, .image-decoration::after {
     content: "";
     position: absolute;
     left: 50%;
 }
 
+/* square rotated - small decoration above image */
 .image-decoration::before {
     width: .2rem;
     height: .2rem;
-    border: 1px solid grey;
-    background-color: grey;
+    border: .0625rem solid #5D2E46;
+    background-color: #5D2E46;
     transform: translateX(-50%) rotate(45deg);
 }
 
+/* the line leading to square rotated */
 .image-decoration::after {
-    border-right: 1px solid grey;
-    width: 1px;
+    border-right: .0625rem solid #5D2E46;
     height: 100%;
     bottom: 0;
     transform: translateX(-50%);
 }
+
 /* image */
 img {
     width: 100%;
+    box-shadow: .1rem .1rem 2rem #5D2E46;
 }
 
 
@@ -89,12 +99,18 @@ img {
     section {
         max-width: 80%;
     }
-
 }
 
 
 @media only screen and (min-width: 768px) {
     section {
+        min-width: 30rem;
         max-width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    section {
+        max-width: 25%;
     }
 }

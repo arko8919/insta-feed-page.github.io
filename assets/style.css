@@ -2,7 +2,6 @@
 @import "main.css";
 @import "footer.css";
 
-
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -29,14 +28,28 @@ body {
     /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
     user-select: none;
 
+
     font-family: 'Josefin Sans', sans-serif;
 
-    background-color: lightgrey;
+    background-color: #E8D6CB;
+    /* move footer to the bottom of the page if there is not enough content */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-h1, h2 {
-    font-family: 'Hanalei', cursive;
+main {
+    flex: 1;
 }
 
+h1, h2, footer {
+    text-align: center;
+}
 
+p {
+    color: #AD6A6C;
+}
 
+button, section, img, section::before {
+    border-radius: .4rem;
+}

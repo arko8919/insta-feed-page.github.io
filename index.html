@@ -17,31 +17,52 @@
 </header>
 
 <main>
-    <section>
-        <h2>Title 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dolor sapien, condimentum a efficitur
-            non, maximus sagittis mauris. Nunc lobortis sollicitudin tortor, a faucibus risus.
-        </p>
-        <button>Change Image</button> <!-- button to change image -->
-        <div class="image-wrapper">
-            <div class="image-decoration"></div> <!-- decoration above image -->
-            <img src="assets/left.jpg" alt=""> <!- accessible -->
-        </div>
-    </section>
-    <section>
-        <h2>Title 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dolor sapien, condimentum a efficitur
-            non, maximus sagittis mauris. Nunc lobortis sollicitudin tortor, a faucibus risus.
-        </p>
-        <button>Change Image</button> <!-- button to change image -->
-        <div class="image-wrapper">
-            <div class="image-decoration"></div> <!-- decoration above image -->
-            <img src="assets/right.jpg" alt=""> <!-- accessible -->
-        </div>
-    </section>
+    <!-- container keep section in size otherwise flex: 1 will stretch sections -->
+    <div class="container">
+        <section>
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dolor sapien, condimentum a
+                efficitur
+                non, maximus sagittis mauris. Nunc lobortis sollicitudin tortor, a faucibus risus.
+            </p>
+            <button>Change Image</button> <!-- button to change image -->
+            <div class="image-wrapper">
+                <div class="image-decoration"></div> <!-- decoration above image -->
+                <img src="assets/left.jpg" alt=""> <!- accessible -->
+            </div>
+        </section>
+        <section>
+            <h2>Title 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dolor sapien, condimentum a
+                efficitur
+                non, maximus sagittis mauris. Nunc lobortis sollicitudin tortor, a faucibus risus.
+            </p>
+            <button>Change Image</button> <!-- button to change image -->
+            <div class="image-wrapper">
+                <div class="image-decoration"></div> <!-- decoration above image -->
+                <img src="assets/right.jpg" alt=""> <!-- accessible -->
+            </div>
+        </section>
+    </div>
 </main>
 
 <footer>
+    <ul class="social-media">
+        <li>
+            <a href="https://www.linkedin.com/in/artur-sas-dunajewski/" title="Connect with me on Linkedin"
+               target="_blank">Linkedin</a>
+        </li>
+        <li>
+            <a href="https://github.com/arko8919" title="Connect with me on Github" target="_blank">Github</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/artur.sasdunajewski" title="Connect with me on Facebook" target="_blank">Facebook</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/arko8919/" title="Connect with me on Instagram"
+               target="_blank">Instagram</a>
+        </li>
+    </ul>
     <p>Copyright Artur Sas Dunajewski 2021</p>
 </footer>
 </body>

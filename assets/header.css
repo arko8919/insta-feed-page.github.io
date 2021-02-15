@@ -1,0 +1,12 @@
+h1, h2 {
+    color: #5D2E46;
+}
+
+h1 {
+    font-family: 'Hanalei', cursive;
+    text-shadow: .0625rem .0625rem .4375rem #5D2E46;
+}
+
+h2 {
+    text-shadow: .125rem .125rem .3125rem #AD6A6C;
+}
