@@ -4,8 +4,7 @@ export const fetching = function () {
 
     /* URL to fetch data from Instagram API */
     const fields = 'caption, media_url';
-    const accessToken = 'IGQVJYTU4tR1JuZAUJLQkJrUXVWcHd1THl3M0xtQ1NxY0ZAzV3ZAaMWxMQ09ZAbXpvdERRelFVR2ZA1R3Y1aWk2Y2pvcXF' +
-        'QdTRYcU1xYXhSYkVRQnlWR2s1Wmd3QVZANZAFdoYTdRNE9MOXVWNHNhRUNGZAzZAXbgZDZD';
+    const accessToken = 'IGQVJYeXNSWXpVYVNrcVZAqWXRqdVhveWRIWENIcXVBUTZAMWGZAWVk5BYUJkTFBIM2RacjFFU2RXNElsWDVBeHpYbGJ2N0dWUXV0dFJyNkFNRFBVaGl0ZAXBDUWQ3Vi0wU3hJSjgwdmlZASWtzNUxpREJVMgZDZD';
     const numberOfImages = '&count=10';
     const url = `https://graph.instagram.com/me/media?fields=${fields}&access_token=${accessToken}${numberOfImages}`;
 
