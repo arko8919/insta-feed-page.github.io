@@ -7,7 +7,8 @@ module.exports = merge(common, {
     mode: 'development',
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist') // resolve absolute path to this directory
+        // Resolve absolute path to this directory
+        path: path.resolve(__dirname, 'dist')
     },
     plugins: [
         new HtmlWebpackPlugin({

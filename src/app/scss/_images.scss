@@ -1,7 +1,7 @@
 @use "utility/placeholders";
 @use "utility/variables";
 
-/* image container with image decoration */
+/* Image container with image decoration */
 .container {
   .image-wrapper {
     width: 60%;
@@ -11,13 +11,13 @@
     bottom: -15%;
   }
 
-  /* decoration above image ( vertical line and rotated square ) */
+  /* Decoration above image ( vertical line and rotated square ) */
   .image-decoration {
     height: 1rem;
 
     position: relative;
 
-    /* square rotated - small decoration above image */
+    /* Square rotated - small decoration above image */
     &::before {
       @extend %pseudo-element;
 
@@ -30,7 +30,7 @@
       transform: translateX(-50%) rotate(45deg);
     }
 
-    /* the line leading to square rotated */
+    /* The line leading to square rotated */
     &::after {
       @extend %pseudo-element;
 

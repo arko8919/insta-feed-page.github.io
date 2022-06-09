@@ -1,7 +1,8 @@
 @use "utility/variables";
 
 .container {
-  /* buttons */
+
+  /* Buttons */
   button {
     padding: .6rem .9rem;
     border: .0625rem solid variables.$clam-shell;
@@ -14,6 +15,7 @@
     outline: none;
     cursor: pointer;
     transition: .4s all;
+
     &:hover {
       background-color: variables.$clam-shell;
       color: variables.$finn;

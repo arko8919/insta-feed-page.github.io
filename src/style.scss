@@ -1,14 +1,16 @@
-@use "app/scss/header";
-@use "app/scss/main";
-@use "app/scss/footer";
-@use "app/scss/utility/variables";
+@use 'app/scss/header';
+@use 'app/scss/main';
+@use 'app/scss/footer';
+@use 'app/scss/utility/variables';
 
 html {
   box-sizing: border-box;
   font-size: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -32,7 +34,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 
   background-color: variables.$bone;
-  /* move footer to the bottom of the page if there is not enough content */
+  /* Move footer to the bottom of the page if there is not enough content */
   display: flex;
   flex-direction: column;
   @include main.flex($flex-direction: column);
@@ -42,7 +44,10 @@ body {
     flex: 1;
   }
 
-  h1, h2, footer, p {
+  h1,
+  h2,
+  footer,
+  p {
     text-align: center;
   }
 
@@ -50,16 +55,16 @@ body {
     color: variables.$coral-tree;
   }
 
-  button, section, img, section::before {
-    border-radius: .4rem;
+  button,
+  section,
+  img,
+  section::before {
+    border-radius: 0.4rem;
   }
 
-  /* image */
+  /* Image */
   img {
     width: 100%;
-
-    box-shadow: .1rem .1rem 1rem variables.$finn;
+    box-shadow: 0.1rem 0.1rem 1rem variables.$finn;
   }
 }
-
-

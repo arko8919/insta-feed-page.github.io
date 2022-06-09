@@ -1,5 +1,7 @@
+/* Import styles */
 import './normalize.css';
 import './style.scss';
+/* Import javascript */
 import {fetching} from './app/js/fetch-image';
 import {changeImage} from './app/js/change-image';
 
@@ -8,11 +10,9 @@ const buttonRef = document.querySelectorAll('button');
 const imgRef = document.querySelectorAll('.image-wrapper img');
 const imgCaption = document.querySelectorAll('section h2');
 
-/* global variables */
-
-/* currently displayed 10 images - image number 1 and image number 9 */
+/* Images with numbers 1 and 10 */
 let imageNumber = [0, 9];
-/* data from instagram api - media_url and caption */
+/* Data from instagram api - media_url and caption */
 let responseObject = {};
 
 fetching().then(json => {

@@ -1,34 +1,30 @@
-@forward "utility/mixins";
-@use "utility/variables";
-@use "utility/mixins";
-@use "images";
-@use "buttons";
+@forward 'utility/mixins';
+@use 'utility/variables';
+@use 'utility/mixins';
+@use 'images';
+@use 'buttons';
 
 .container {
-  @include mixins.flex(
-          $flex-flow: row wrap,
-          $justify-content: center);
+  @include mixins.flex($flex-flow: row wrap, $justify-content: center);
 
   margin-bottom: 5rem;
 
   section {
-    @include mixins.flex(
-            $flex-flow: column nowrap,
-            $align-items: center);
+    @include mixins.flex($flex-flow: column nowrap, $align-items: center);
     position: relative;
 
-    margin: 5rem .7rem;
+    margin: 5rem 0.7rem;
 
     background-color: variables.$bone;
-    box-shadow: .1rem .1rem .5rem variables.$finn;
+    box-shadow: 0.1rem 0.1rem 0.5rem variables.$finn;
 
-    /* section decoration - lines on back of section and image  */
+    /* Section decoration - lines on back of section and image  */
     &::before {
-      content: "";
+      content: '';
 
       width: 77%;
       height: 100%;
-      border: .0625rem solid variables.$coral-tree;
+      border: 0.0625rem solid variables.$coral-tree;
 
       position: absolute;
       bottom: -5%;
@@ -50,7 +46,7 @@
       min-width: 30rem;
       max-width: 40%;
 
-      box-shadow: .1rem .1rem 1rem variables.$finn;
+      box-shadow: 0.1rem 0.1rem 1rem variables.$finn;
     }
 
     @media only screen and (min-width: 1440px) {
@@ -58,6 +54,3 @@
     }
   }
 }
-
-
-

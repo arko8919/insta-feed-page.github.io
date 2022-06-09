@@ -8,8 +8,7 @@ export const fetching = function () {
     const numberOfImages = '&count=10';
     const url = `https://graph.instagram.com/me/media?fields=${fields}&access_token=${accessToken}${numberOfImages}`;
 
-    /* fetch data from Instagram API and if successful display image number 1 and image number 9 */
-
+    /* Fetch data from Instagram API and if successful display image number 1 and image number 9 */
     function fetchImages(url) {
         return fetch(url)
             .then(response => {
@@ -30,7 +29,7 @@ export const fetching = function () {
                 console.log(`There has been a problem with your fetch operation for resource " ${url}": ${e.message}`);
             })
             .finally(() => {
-                console.log(`fetch attempt finished.`);
+                console.log(`Fetch attempt finished.`);
             });
     }
 
