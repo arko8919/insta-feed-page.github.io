@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { EnvironmentPlugin } = require("webpack");
 
 module.exports = merge(common, {
   mode: "production",
@@ -33,6 +34,9 @@ module.exports = merge(common, {
       filename: "[name].[contenthash].css",
     }),
     new CleanWebpackPlugin(),
+    new EnvironmentPlugin({
+      INSTAGRAM_APP_TOKEN: ""
+  })
   ],
   module: {
     rules: [
